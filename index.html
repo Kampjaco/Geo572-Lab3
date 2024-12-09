@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+            <title></title>
+
+        <!--custom stylesheet-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--external stylesheets-->
+        <link rel="stylesheet" href="lib/scrollmap.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+
+    </head>
+
+    <body>
+        <div class="content">
+             <!--title block, background image is title image-->
+            <div class="row" style="background-image:url(assets/my_title.png); background-size:contain; color:white;">
+                <div class="center title">
+                    <!--title text-->
+                    <h1>Fantasy Animation Map</h1>
+                    <!--subtitle or author-->
+                    <p class="author">JACOB KAMPF</p>
+                </div>
+            </div>
+            <!--text content block-->
+            <div class="row">
+                <div class="center">
+                    <p>This map style was based off of visual elements from different animated fantasy movies and TV shows I have enjoyed watching recently.</p>
+                </div>
+            </div>
+            <!--side by side text and image-->
+            <div class="row">
+                <div class="left">
+                    <img class="fit" src="assets/my_inspo.png">
+                </div>
+                <div class="right">
+                    <p class="vert-center">The map makes use of the color schemes, textures, and font styles from these media.</p>
+                </div>
+            </div>
+
+            <!--background images with text scrolling over them (sidecar)-->
+            <div class="scroll-container">    
+                <!--background images-->
+                <div class="background-item">
+                    <img src="assets/my_background1.png" data-slide="1" class="fill">
+                    <img src="assets/my_background2.png" data-slide="2" class="fill hidden">
+                    <img src="assets/my_background3.png" data-slide="3" class="fill hidden">
+                    <img src="assets/my_background4.png" data-slide="4" class="fill hidden">
+                </div>
+                <!--foreground text blocks-->
+                <div class="foreground-item">
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">The main color scheme is from the Spiderman - Across the Spiderverse inspiration piece.  The three main colors:
+                                black, red and blue, coinside with the Spidersuit Miles Morales wears.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">The pink building color is a nod to the character Gwen Stacy and the Spidersuit she wears.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">The water pattern is the background from the still from Puss in Boots 2.  Most of the action scenes in this movie
+                                use 2D animation with a sketched/pencil drawing background, which makes it asthetically pleasing to look at.  A part of this sketch pattern
+                                is displayed in the water of the map.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">Finally, the font used for all labels on the map is the font from the title of the Arcane inspiration piece.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!--slideshow content goes here-->
+                        <div class="slide">
+                            <img src="assets/my_slideshow1.png">
+                            <p class="caption">A zoomed-out view of the Fantasy Animation style.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/my_slideshow2.png">
+                            <p class="caption">A mid-scale view centered on Wisconsin.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/my_slideshow3.png">
+                            <p class="caption">A large-scale view of the La Crosse region.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/my_slideshow4.png">
+                            <p class="caption">Downtown Minneapolis and the Mississippi River.</p>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+
+                        <!-- The dots/circles -->
+                        <div class="slideshow-dots">
+                            <span class="dot" id="1"></span>
+                            <span class="dot" id="2"></span>
+                            <span class="dot" id="3"></span>
+                            <span class="dot" id="4"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <p>Check out the map for yourself!</p>
+                    <iframe class="fit" src="https://api.mapbox.com/styles/v1/kampjaco/cm3g6mtpi004j01qvdzqp4e3i.html?title=view&access_token=pk.eyJ1Ijoia2FtcGphY28iLCJhIjoiY20wY2piNmMyMDMydTJpcTR1MmVwaGJzMiJ9.JOPmMDoyPkWtw_sB2xQYNQ&zoomwheel=true&fresh=true#16.95/45.119739/-95.046953"></iframe>
+                </div>
+            </div>
+
+            <!--credits-->
+            <div class="row no-margin">
+                <div class="center">
+                    <div class="credits">
+                        <p><b>Credits:</b></p>
+                        <p>Map created with Mapbox Studio</p>
+                        <p>Data from openstreetmap</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--external scripts-->
+        <script type="text/javascript" src="lib/scrollmap.js"></script>
+    </body>
+</html>
